@@ -2,11 +2,14 @@
 import React, { useState } from 'react'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import Image from 'next/image'
-import ButtonComponent from '../Button/Button'
-import styles from '@/components/Button/Button.module.css'
+
 import { Button } from '@/components/ui/button'
 import clsx from 'clsx'
 import useScrollTop from '@/hooks/useScrollTop'
+import ButtonComponent from '../Button/Button'
+
+import styles from '@/components/Button/Button.module.css'
+import Link from 'next/link'
 
 const Header = () => {
   const [show, toggleShow] = useState(false)
@@ -45,15 +48,17 @@ const Header = () => {
               <Image src={'/images/basilico_logo.png'} alt="Basilico" fill className='object-cover'/>
             </AspectRatio>
           </div>        
-          <ul className={`uppercase text-white flex gap-x-7 font-audrey`}>
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Menu</li>
-            <li>Porfolio</li>
-            <li>Blog</li>
-            <li>Contact</li>
-          </ul>
-          <div className="book-a-table">
+          <nav id="main-nav" className='main-nav'>
+            <ul className={`uppercase text-white flex font-audrey menu`}>
+              <li><Link href="#">Home</Link></li>
+              <li><Link href="#">Pages</Link></li>
+              <li><Link href="#">Menu</Link></li>
+              <li><Link href="#">Porfolio</Link></li>
+              <li><Link href="#">Blog</Link></li>
+              <li><Link href="#">Contact</Link></li>
+            </ul>
+          </nav>          
+          <div className="book-a-table ml-auto mr-24">
             <ButtonComponent btnText="Book a Table" btnTypeClass='btnHeader'/>
           </div>
           <div className="sidebar-btn">
