@@ -10,6 +10,7 @@ import ButtonComponent from '../Button/Button'
 
 import styles from '@/components/Button/Button.module.css'
 import Link from 'next/link'
+import { basePath } from '@/lib/utils'
 
 const Header = () => {
   const [show, toggleShow] = useState(false)
@@ -45,7 +46,7 @@ const Header = () => {
         <div className="container flex items-center justify-between px-5 py-3">
           <div className="main-logo w-40 h-20 flex items-center justify-center">
             <AspectRatio ratio={16/4}>
-              <Image src={'/images/basilico_logo.png'} alt="Basilico" fill className='object-cover'/>
+              <Image src={`${basePath}/images/basilico_logo.png`} alt="Basilico" fill className='object-cover'/>
             </AspectRatio>
           </div>        
           <nav id="main-nav" className='main-nav'>
