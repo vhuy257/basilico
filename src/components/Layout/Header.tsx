@@ -7,6 +7,7 @@ import styles from '@/components/Button/Button.module.css'
 import { Button } from '@/components/ui/button'
 import clsx from 'clsx'
 import useScrollTop from '@/hooks/useScrollTop'
+import { basePath } from '@/lib/utils'
 
 const Header = () => {
   const [show, toggleShow] = useState(false)
@@ -42,7 +43,7 @@ const Header = () => {
         <div className="container flex items-center justify-between px-5 py-3">
           <div className="main-logo w-40 h-20 flex items-center justify-center">
             <AspectRatio ratio={16/4}>
-              <Image src={'/images/basilico_logo.png'} alt="Basilico" fill className='object-cover'/>
+              <Image src={`${basePath}/images/basilico_logo.png`} alt="Basilico" fill className='object-cover'/>
             </AspectRatio>
           </div>        
           <ul className={`uppercase text-white flex gap-x-7 font-audrey`}>
