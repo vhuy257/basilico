@@ -100,6 +100,65 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	justify-content: flex-start;
 }
 
+.header .main-nav {
+	position: absolute;
+	left: 25%;
+	top: 52%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	height: 100%;
+	display: flex;
+}
+
+#main-nav .menu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#main-nav .menu li::after {
+	content: "";
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #e6c9a2;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#main-nav .menu li {
+	position: relative;
+	margin-right: 56px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#main-nav .menu li a {
+	font-size: 15px;
+	line-height: 3.333;
+	letter-spacing: 2.9px;
+	font-weight: 200;
+	position: relative;
+	display: block;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#main-nav .menu li.current-menu-item::after, #main-nav .menu li:hover::after {
+	width: 100%;
+	height: 2px;
+	bottom: 2px;
+}
+
 input::placeholder {
     color: #fff;
 }

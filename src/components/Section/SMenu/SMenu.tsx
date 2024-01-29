@@ -31,7 +31,7 @@ const SMenu = () => {
               Taste the Best that Surprise you
             </p>
             <h3
-              className="title aos-init mb-6"
+              className="title aos-init mb-6 mt-5"
               data-aos-duration="1000"
               data-aos="fade-up"
             >
