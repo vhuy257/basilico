@@ -21,6 +21,7 @@ const MainSlider = () => {
                 autoplay={{
                     delay: 0
                 }}                         
+                wrapperClass='max-h-[calc(100vh-160px)] swiper-wrapper'
                 speed={4000}              
                 loop={true}
                 grabCursor={true}        
