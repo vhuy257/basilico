@@ -10,7 +10,7 @@ const Gallery = () => {
         <section className="gallery">
             <div className="gallery-main flex">
                 <div className="gallery-box">
-                    <div className="image"><Image src={`${basePath}/basilico/gallery-1.jpg`} alt="" width={480} height={558}/></div>
+                    <div className="image"><Image src={`${basePath}/images/basilico/gallery-1.jpg`} alt="" width={480} height={558}/></div>
                     <div className="content">
                         <h5 className="name">Tender Octopus and Fennel</h5>
                         <p className="cate">Food - Restaurant</p>
@@ -21,7 +21,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className="gallery-box">
-                    <div className="image"><Image src={`${basePath}/basilico/gallery-2.jpg`} alt="" width={480} height={558}/></div>
+                    <div className="image"><Image src={`${basePath}/images/basilico/gallery-2.jpg`} alt="" width={480} height={558}/></div>
                     <div className="content">
                         <h5 className="name">Tender Octopus and Fennel</h5>
                         <p className="cate">Food - Restaurant</p>
@@ -32,7 +32,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className="gallery-box">
-                    <div className="image"><Image src={`${basePath}/basilico/gallery-3.jpg`} alt="" width={480} height={558}/></div>
+                    <div className="image"><Image src={`${basePath}/images/basilico/gallery-3.jpg`} alt="" width={480} height={558}/></div>
                     <div className="content">
                         <h5 className="name">Tender Octopus and Fennel</h5>
                         <p className="cate">Food - Restaurant</p>
@@ -43,7 +43,7 @@ const Gallery = () => {
                     </div>
                 </div>
                 <div className="gallery-box">
-                    <div className="image"><Image src={`${basePath}/basilico/gallery-4.jpg`} alt="" width={480} height={558}/></div>
+                    <div className="image"><Image src={`${basePath}/images/basilico/gallery-4.jpg`} alt="" width={480} height={558}/></div>
                     <div className="content">
                         <h5 className="name">Tender Octopus and Fennel</h5>
                         <p className="cate">Food - Restaurant</p>
