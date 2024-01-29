@@ -2,6 +2,7 @@ import React from 'react'
 import ButtonComponent from '../../Button/Button'
 
 import Image from 'next/image'
+import { basePath } from '@/lib/utils'
 import './Opening.scss'
 
 const Opening = () => {
@@ -46,7 +47,7 @@ const Opening = () => {
                     </div>
                     <div className="grid-item w-5/12">
                         <div className="opening-img aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left">
-                            <Image src="/images/basilico/opening.jpg" alt="Opening" width={807} height={633}/>
+                            <Image src={`${basePath}/images/basilico/opening.jpg`} alt="Opening" width={807} height={633}/>
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import "aos/dist/aos.css"
 import ButtonComponent from '../../Button/Button';
+import { basePath } from '@/lib/utils';
 
 const About = () => {
 
@@ -19,7 +20,7 @@ const About = () => {
             <div className="container max-w-7xl">
                 <div className="grid grid-cols-2 gap-x-8">
                     <div className="grid-item aos-init aos-animate" data-aos-duration="1000" data-aos="fade-right">
-                        <Image src={'/images/basilico/about.jpg'} alt="About us" width={500} height={633}/>
+                        <Image src={`${basePath}/images/basilico/about.jpg`} alt="About us" width={500} height={633}/>
                     </div>
                     <div className="grid-item">
                         <div className="about-content">

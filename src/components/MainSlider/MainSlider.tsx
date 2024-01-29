@@ -5,6 +5,7 @@ import { Navigation, Autoplay, EffectFade } from 'swiper/modules';
 import ButtonComponent from '../Button/Button';
 import Image from 'next/image';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { basePath } from '@/lib/utils';
 
 import './MainSlider.scss'
 import 'swiper/css/effect-fade'
@@ -30,7 +31,7 @@ const MainSlider = () => {
                         <div className="slide-banner absolute -z-1 left-0 right-0 top-0 bottom-0 w-full max-h-[calc(100vh-160px)]">
                             <AspectRatio ratio={16/9}>              
                                 <Image 
-                                    src={'/images/basilico_main_slider/img_slider_1.jpg'} 
+                                    src={`${basePath}/images/basilico_main_slider/img_slider_1.jpg`} 
                                     alt={'img_slider_1'} 
                                     fill 
                                     className="w-auto max-h-[calc(100vh-160px)] object-cover brightness-50"
