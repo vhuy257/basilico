@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+import { basePath } from '@/lib/utils'
 import './Location.scss'
 import ButtonComponent from '../../Button/Button'
 
@@ -12,7 +13,7 @@ const Location = () => {
                 <div className="flex text-center gap-8">
                     <div className="item">
                         <div className="image left aos-init aos-animate" data-aos-duration="1000" data-aos="fade-right">
-                            <Image src="/images/basilico/map1.jpg" alt="" width={429} height={429}/>
+                            <Image src={`${basePath}/images/basilico/map1.jpg`} alt="" width={429} height={429}/>
                         </div>
                     </div>
                     <div className="item">
@@ -44,7 +45,7 @@ const Location = () => {
                     </div>
                     <div className="col-xl-4 col-md-12 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left">
                         <div className="image right">
-                            <Image src="/images/basilico/map2.jpg" alt="" width={429} height={429}/>
+                            <Image src={`${basePath}/images/basilico/map2.jpg`} alt="" width={429} height={429}/>
                         </div>
                     </div>
                 </div>

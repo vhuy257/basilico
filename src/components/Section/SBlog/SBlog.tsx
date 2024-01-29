@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import { TiArrowRight } from "react-icons/ti";
 
+import { basePath } from "@/lib/utils";
 import "./SBlog.scss";
 
 const data = [
@@ -77,7 +78,7 @@ const SBlog = () => {
                   <div className="blog-box">
                     <div className="top-content relative">
                       <div className="image">
-                        <Image src={k.imgUrl} alt=""  width={370} height={453} className="object-cover w-full"/>
+                        <Image src={basePath + k.imgUrl} alt=""  width={370} height={453} className="object-cover w-full"/>
                       </div>
                       <div className="meta">
                         <h4 className="text-[--foreground]">25</h4>

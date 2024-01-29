@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules';
 import { IoStarSharp } from "react-icons/io5";
 
 import Image from 'next/image';
+import { basePath } from '@/lib/utils';
 import './Testimonials.scss'
 
 const Testimonials = () => {
@@ -24,7 +25,7 @@ const Testimonials = () => {
                 >
                     <SwiperSlide>                 
                         <div className="testimonials-content">
-                            <Image src="/images/basilico/quote.png" alt="" width={47} height={36} className='mx-auto'/>
+                            <Image src={`${basePath}/images/basilico/quote.png`} alt="" width={47} height={36} className='mx-auto'/>
 
                             <h4>
                                 Good restaurant, delicious food, classy atmosphere
@@ -50,7 +51,7 @@ const Testimonials = () => {
                     </SwiperSlide>
                     <SwiperSlide>                 
                         <div className="testimonials-content">
-                            <Image src="/images/basilico/quote.png" alt="" width={47} height={36} className='mx-auto'/>
+                            <Image src={`${basePath}/images/basilico/quote.png`} alt="" width={47} height={36} className='mx-auto'/>
 
                             <h4>
                                 Good restaurant, delicious food, classy atmosphere

@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import ButtonComponent from '../../Button/Button'
 
+import { basePath } from '@/lib/utils'
 import './ChefRestaurant.scss'
 
 const ChefRestaurant = () => {
@@ -13,8 +14,8 @@ const ChefRestaurant = () => {
                     <div className="px-4 w-7/12">
                         <div className="chef-restaurant-image">
                             <div className="group-img">
-                                <Image src="/images/basilico/chef1.jpg" alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-1/2 object-cover inline-block" width={424} height={575}/>
-                                <Image src="/images/basilico/chef2.jpg" alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-1/2 object-cover inline-block" width={424} height={575}/>
+                                <Image src={`${basePath}/images/basilico/chef1.jpg`} alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-1/2 object-cover inline-block" width={424} height={575}/>
+                                <Image src={`${basePath}/images/basilico/chef2.jpg`} alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-1/2 object-cover inline-block" width={424} height={575}/>
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import "./SMenu.scss";
 import ButtonComponent from "../../Button/Button";
+import { basePath } from "@/lib/utils";
 
 const SMenu = () => {
   return (
@@ -13,7 +14,7 @@ const SMenu = () => {
         data-aos="fade-right"
       >
         <Image
-          src="/images/basilico/shape-menu.png"
+          src={`${basePath}/images/basilico/shape-menu.png`}
           alt=""
           width={324}
           height={298}
@@ -72,10 +73,10 @@ const SMenu = () => {
               <div className="content-inner" style={{ display: "none" }}>
                 <div className="container_inner">
                   <div className="left-img">
-                    <Image src="/images/basilico/menu.jpg" alt="" width={411} height={411}/>
+                    <Image src={`${basePath}/images/basilico/menu.jpg`} alt="" width={411} height={411}/>
                   </div>
                   <div className="right-img">
-                    <Image src="/images/basilico/menu1.jpg" alt="" width={411} height={411}/>
+                    <Image src={`${basePath}/images/basilico/menu1.jpg`} alt="" width={411} height={411}/>
                   </div>
                   <ul className="menu-list">
                     <li>
@@ -121,22 +122,19 @@ const SMenu = () => {
                       </h5>
                       <p>Citrus, wild rocket condiment.</p>
                     </li>
-
                     <div className="mt-10">
                         <ButtonComponent btnText="View all Menu" btnTypeClass="btnHeader"/>
                     </div>
-                    
                   </ul>
                 </div>
               </div>
-
               <div className="content-inner active">
                 <div className="container_inner">
                   <div className="left-img">
-                    <Image src="/images/basilico/menu.jpg" alt="" width={411} height={411}/>
+                    <Image src={`${basePath}/images/basilico/menu.jpg`} alt="" width={411} height={411}/>
                   </div>
                   <div className="right-img">
-                    <Image src="/images/basilico/menu1.jpg" alt="" width={411} height={411}/>
+                    <Image src={`${basePath}/images/basilico/menu1.jpg`} alt="" width={411} height={411}/>
                   </div>
                   <ul className="menu-list">
                     <li>
@@ -182,11 +180,9 @@ const SMenu = () => {
                       </h5>
                       <p>Citrus, wild rocket condiment.</p>
                     </li>
-
                     <div className="mt-10">
                         <ButtonComponent btnText="View all Menu" btnTypeClass="btnHeader"/>
                     </div>
-
                   </ul>
                 </div>
               </div>
@@ -194,10 +190,10 @@ const SMenu = () => {
               <div className="content-inner" style={{ display: "none" }}>
                 <div className="container_inner">
                   <div className="left-img">
-                    <Image src="/images/basilico/menu.jpg" alt="" width={411} height={411} />
+                    <Image src={`${basePath}/images/basilico/menu.jpg`} alt="" width={411} height={411} />
                   </div>
                   <div className="right-img">
-                    <Image src="/images/basilico/menu1.jpg" alt="" width={411} height={411} />
+                    <Image src={`${basePath}/images/basilico/menu1.jpg`} alt="" width={411} height={411} />
                   </div>
                   <ul className="menu-list">
                     <li>
@@ -243,22 +239,19 @@ const SMenu = () => {
                       </h5>
                       <p>Citrus, wild rocket condiment.</p>
                     </li>
-
                     <div className="mt-10">
                         <ButtonComponent btnText="View all Menu" btnTypeClass="btnPrimary"/>
                     </div>
-
                   </ul>
                 </div>
               </div>
-
               <div className="content-inner" style={{ display: "none" }}>
                 <div className="container_inner">
                   <div className="left-img">
-                    <Image src="/images/basilico/menu.jpg" alt="" width={411} height={411}/>
+                    <Image src={`${basePath}/images/basilico/menu.jpg`} alt="" width={411} height={411}/>
                   </div>
                   <div className="right-img">
-                    <Image src="/images/basilico/menu1.jpg" alt="" width={411} height={411}/>
+                    <Image src={`${basePath}/images/basilico/menu1.jpg`} alt="" width={411} height={411}/>
                   </div>
                   <ul className="menu-list">
                     <li>
@@ -304,11 +297,9 @@ const SMenu = () => {
                       </h5>
                       <p>Citrus, wild rocket condiment.</p>
                     </li>
-                    
                     <div className="mt-10">
                         <ButtonComponent btnText="View all Menu" btnTypeClass="btnPrimary"/>
                     </div>
-
                   </ul>
                 </div>
               </div>

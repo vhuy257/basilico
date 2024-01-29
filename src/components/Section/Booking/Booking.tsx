@@ -1,12 +1,13 @@
 'use client'
 import React from 'react'
 
+import { basePath } from '@/lib/utils'
 import './Booking.scss'
 import ButtonComponent from '../../Button/Button'
 
 const Booking = () => {
     return (
-        <section className="booking w-svw" style={{backgroundImage: 'url("/images/basilico/booking.jpg")'}}>
+        <section className="booking w-svw" style={{backgroundImage: `url("${basePath}/images/basilico/booking.jpg")`}}>
             <div className="container mx-auto max-w-6xl relative z-10">
                 <div className="booking-content flex gap-8 items-center">
                     <div className="block-text style-2 w-1/2">
