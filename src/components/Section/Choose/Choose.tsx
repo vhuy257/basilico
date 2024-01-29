@@ -11,6 +11,7 @@ import ButtonComponent from '../../Button/Button'
 import Image from 'next/image'
 
 import './Choose.scss'
+import { basePath } from '@/lib/utils';
 
 const Choose = () => {
     const [activeTab, setActiveTab] = useState('private')
@@ -124,7 +125,7 @@ const Choose = () => {
                                     <div className={`slideItem`}>
                                         <AspectRatio ratio={16/17}>              
                                             <Image 
-                                                src={'/images/basilico/choose.jpg'} 
+                                                src={`${basePath}/images/basilico/choose.jpg`} 
                                                 alt={'choose'} 
                                                 width={651}
                                                 height={671}
@@ -136,7 +137,7 @@ const Choose = () => {
                                     <div className={`slideItem`}>
                                         <AspectRatio ratio={16/17}>              
                                             <Image 
-                                                src={'/images/basilico/choose-1.jpg'} 
+                                                src={`${basePath}/images/basilico/choose-1.jpg`} 
                                                 alt={'choose'} 
                                                 width={651}
                                                 height={671}

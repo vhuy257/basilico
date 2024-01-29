@@ -7,6 +7,7 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { TbMailFilled } from "react-icons/tb";
 import { IoLogoInstagram } from "react-icons/io"
 import { FaTelegramPlane } from "react-icons/fa";
+import { basePath } from '@/lib/utils';
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
           <div className="col-item">
             <div className='w-40 h-10'>
               <AspectRatio ratio={16/4}>
-                <Image src={'/images/basilico_logo.png'} alt="Logo" fill className="object-cover"/>
+                <Image src={`${basePath}/images/basilico_logo.png`} alt="Logo" fill className="object-cover"/>
               </AspectRatio>
             </div>
             <div className="py-4">
