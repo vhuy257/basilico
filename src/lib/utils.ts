@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const API_URL = 'http://localhost:1337/api'
-export const basePath = ''
+export const basePath = '/basilico'
 
 export const kyOriginalApi = ky.create({
   prefixUrl: API_URL
