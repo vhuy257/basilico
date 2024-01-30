@@ -15,10 +15,10 @@ const About = () => {
     }, [])
 
     return (
-        <section className="about">
+        <section className="about mt-10">
             <div className="shape"></div>
             <div className="container max-w-7xl">
-                <div className="grid grid-cols-2 gap-x-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8">
                     <div className="grid-item aos-init aos-animate" data-aos-duration="1000" data-aos="fade-right">
                         <Image src={`${basePath}/images/basilico/about.jpg`} alt="About us" width={500} height={633}/>
                     </div>

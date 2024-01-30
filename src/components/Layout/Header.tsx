@@ -10,13 +10,20 @@ import ButtonComponent from '../Button/Button'
 
 import styles from '@/components/Button/Button.module.css'
 import Link from 'next/link'
+import { useLenis } from '@studio-freight/react-lenis'
 import { basePath } from '@/lib/utils'
+import { BiLogoFacebook } from "react-icons/bi";
+import { TiSocialTwitter } from "react-icons/ti";
+import { TbMailFilled } from "react-icons/tb";
+import { IoLogoInstagram } from "react-icons/io"
 
 const Header = () => {
   const [show, toggleShow] = useState(false)
 
   const { visible: visibleIsFixed } = useScrollTop(200)
   const { visible: visibleIsSmall } = useScrollTop(300)
+
+  const lenis = useLenis()
 
   return (
     <div>
@@ -49,8 +56,8 @@ const Header = () => {
               <Image src={`${basePath}/images/basilico_logo.png`} alt="Basilico" fill className='object-cover'/>
             </AspectRatio>
           </div>        
-          <nav id="main-nav" className='main-nav'>
-            <ul className={`uppercase text-white flex font-audrey menu`}>
+          <nav id="main-nav" className='main-nav hidden md:flex'>
+            <ul className={`uppercase text-white flex font-audrey menu *:mx-4 2xl:*:mx-8`}>
               <li><Link href="#">Home</Link></li>
               <li><Link href="#">Pages</Link></li>
               <li><Link href="#">Menu</Link></li>
@@ -60,12 +67,66 @@ const Header = () => {
             </ul>
           </nav>          
           <div className="book-a-table ml-auto mr-24">
-            <ButtonComponent btnText="Book a Table" btnTypeClass='btnHeader'/>
+            <ButtonComponent 
+              btnText="Book a Table" 
+              btnTypeClass='btnHeader' 
+              className="hidden xl:inline-block"
+              onClick={() => lenis.scrollTo('#bookTable', {
+                duration: 1,
+                offset: -100,
+                easing: (x: number) => {
+                    return 1 - Math.cos((x * Math.PI) / 2)
+                }
+              })}
+            />
           </div>
           <div className="sidebar-btn">
-            <Button className={`${styles.btnSide} inline-block ${show && styles.btnSideActive}`} onClick={() => toggleShow(!show)}>
+            <Button className={`${styles.btnSide} ${show && styles.btnSideActive}`} onClick={() => toggleShow(!show)}>
               <span></span>
             </Button>
+
+            <div 
+              className={`sidebar-content text-center hidden sm:inline-block ${clsx({
+                'active': show
+              })}`}
+            >
+              <Image src={`${basePath}/images/basilico_logo.png`} alt="" width={169} height={43} className='mx-auto mb-10'/>
+              <p>
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                  dis parturient montes, nascetur ridiculus mus.
+              </p>
+              <h4 className='text-[--foreground] my-5'>+(406) 555-0120</h4>
+              <p className='mb-0'>Andé Restaurant 767 5th Avenue, Paris 10021, France</p>
+              <p>Brochetterestaurant@gmail.com</p>
+              <div className="line"></div>
+              <p className="py-2">
+                  Opening Hour: <br/>
+                  Mon - Fri : 9.00am - 22.00pm, Holidays : Close
+              </p>
+              <div className="line"></div>
+              <ul className="flex gap-5 social-footer mx-auto text-center justify-center mt-10">
+                <li>
+                  <Link href="#">
+                      <BiLogoFacebook />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                      <TiSocialTwitter />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                      <TbMailFilled />
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                      <IoLogoInstagram />
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

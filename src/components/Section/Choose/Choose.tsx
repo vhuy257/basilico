@@ -20,7 +20,7 @@ const Choose = () => {
         <section className="choose w-svw">
             <div className="shape"></div>
             <div className="container max-w-9xl">
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="column">
                         <div className="choose-content">
                             <div className="block-text">
@@ -119,7 +119,7 @@ const Choose = () => {
                                 }}   
                                 loop={true}
                                 grabCursor={false}        
-                                className='h-screen'
+                                className='lg:h-screen'
                             >
                                 <SwiperSlide>                 
                                     <div className={`slideItem`}>

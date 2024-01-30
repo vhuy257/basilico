@@ -8,13 +8,17 @@ type classType = 'btnDefault' | 'btnPrimary' | 'btnHeader' | 'btnBookTable';
 type btnProps = {
     btnText: string
     btnTypeClass: classType
-    btnType?: any
+    btnType?: any,
+    onClick?: () => void
+    className?: string
 }
 
 const ButtonComponent = ({
     btnText,
     btnTypeClass,
-    btnType
+    btnType,
+    onClick,
+    className
 }: btnProps) => {
     
     const classBtnType = () => {        
@@ -40,7 +44,7 @@ const ButtonComponent = ({
     }
 
     return (
-        <Button className={`rounded-none border-none shadow-none uppercase font-calibri ${styles.btnStyle} ${classBtnType()}`} type={btnType || 'button'}>
+        <Button className={`rounded-none border-none shadow-none uppercase ${className} font-calibri ${styles.btnStyle} ${classBtnType()}`} type={btnType || 'button'} onClick={onClick}>
             {btnText}
         </Button>
     )

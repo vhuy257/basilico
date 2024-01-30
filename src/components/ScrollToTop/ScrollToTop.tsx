@@ -11,7 +11,8 @@ const ScrollToTop = ( { children }:{ children: React.ReactNode}) => {
     
     return ( 
         <div style={{display: visible ? 'inline' : 'none'}}>
-            <Button onClick={scrollToTop} variant={'outline'} className="rounded-sm fixed bottom-5 right-10 bg-[#00000038] hover:text-[--primary] hover:-translate-y-2 border-0 text-4xl text-white transition-all ease-in-out">  
+            <Button onClick={scrollToTop} variant={'outline'} 
+                className="rounded-sm fixed bottom-5 right-10 bg-[--foreground] hover:bg-[--foreground] hover:-translate-y-2 border-0 text-4xl text-black transition-all ease-in-out">  
                 {children}
             </Button> 
         </div>        

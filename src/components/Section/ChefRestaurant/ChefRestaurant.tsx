@@ -10,16 +10,16 @@ const ChefRestaurant = () => {
     return (
         <section className='chef-restaurant w-svw'>
             <div className="container max-w-9xl">
-                <div className="flex">
-                    <div className="px-4 w-7/12">
+                <div className="flex flex-wrap">
+                    <div className="px-4 lg:w-7/12">
                         <div className="chef-restaurant-image">
-                            <div className="group-img">
-                                <Image src={`${basePath}/images/basilico/chef1.jpg`} alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-1/2 object-cover inline-block" width={424} height={575}/>
-                                <Image src={`${basePath}/images/basilico/chef2.jpg`} alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-1/2 object-cover inline-block" width={424} height={575}/>
+                            <div className="group-img flex justify-between flex-wrap lg:flex-nowrap">
+                                <Image src={`${basePath}/images/basilico/chef1.jpg`} alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-full lg:w-1/2 object-cover inline-block" width={424} height={575}/>
+                                <Image src={`${basePath}/images/basilico/chef2.jpg`} alt="" data-aos-duration="1000" data-aos="fade-up" className="aos-init aos-animate w-full lg:w-1/2 object-cover inline-block" width={424} height={575}/>
                             </div>
                         </div>
                     </div>
-                    <div className="px-4 w-5/12">
+                    <div className="px-4 lg:w-5/12">
                         <div className="chef-restaurant-content">
                             <div className="block-text">
                                 <p className="subtitle aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">our chef restaurant</p>
