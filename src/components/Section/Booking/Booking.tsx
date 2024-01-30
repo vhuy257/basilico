@@ -7,10 +7,10 @@ import ButtonComponent from '../../Button/Button'
 
 const Booking = () => {
     return (
-        <section className="booking w-svw" style={{backgroundImage: `url("${basePath}/images/basilico/booking.jpg")`}}>
+        <section className="booking w-svw" style={{backgroundImage: `url("${basePath}/images/basilico/booking.jpg")`}} id="bookTable">
             <div className="container mx-auto max-w-6xl relative z-10">
-                <div className="booking-content flex gap-8 items-center">
-                    <div className="block-text style-2 w-1/2">
+                <div className="booking-content flex gap-8 items-center flex-wrap">
+                    <div className="block-text style-2 w-full lg:w-1/2">
                         <p className="subtitle aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">ONLINE RESERVATION</p>
 
                         <h3 className="title aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">BOOK A TABLE</h3>
@@ -21,7 +21,7 @@ const Booking = () => {
                             thank you!
                         </p>
                     </div>
-                    <div className="booking-form w-1/2">
+                    <div className="booking-form w-full lg:w-1/2">
                         <form>
                             <div className="form-group">
                                 <input type="text" className="form-control" id="inputname4" placeholder="Name*"/>
@@ -67,7 +67,7 @@ const Booking = () => {
                             </div>
 
                             <div className="mt-10">
-                                <ButtonComponent btnTypeClass='btnBookTable' btnText='Book a Table' btnType={'submit'}  />
+                                <ButtonComponent btnTypeClass='btnBookTable' btnText='Book a Table' btnType={'submit'} />
                             </div>
                         </form>
                     </div>

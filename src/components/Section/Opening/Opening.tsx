@@ -10,8 +10,8 @@ const Opening = () => {
         <section className="opening w-svw">
             <div className="shape"></div>
             <div className="container max-w-7xl">
-                <div className="flex gap-8 w-full">
-                    <div className="grid-item w-7/12">
+                <div className="flex flex-col lg:flex-row gap-8 w-full">
+                    <div className="grid-item lg:w-7/12">
                         <div className="opening-content">
                             <div className="block-text">
                                 <h3 className="title aos-init aos-animate text-5xl" data-aos-duration="1000" data-aos="fade-up">Opening time Hours</h3>
@@ -45,7 +45,7 @@ const Opening = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="grid-item w-5/12">
+                    <div className="grid-item lg:w-5/12">
                         <div className="opening-img aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left">
                             <Image src={`${basePath}/images/basilico/opening.jpg`} alt="Opening" width={807} height={633}/>
                         </div>

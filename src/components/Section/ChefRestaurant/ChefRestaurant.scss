@@ -5,6 +5,11 @@
         padding-left: 40px;
         padding-top: 101px;
         padding-right: 20px;
+        
+        @media screen and (max-width: 767px) {
+            padding-left: 0;
+            padding-top: 80px;
+        }
     }
 
     .block-text {
@@ -28,9 +33,7 @@
         }
     }
 
-    .chef-restaurant-image .group-img {
-        display: flex;
-        justify-content: space-between;
+    .chef-restaurant-image .group-img {        
         gap: 30px;
     }
 }
