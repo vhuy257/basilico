@@ -1,6 +1,14 @@
 .gallery-box {
     position: relative;
 
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+    
     .content {
         background: var(--background);
         position: absolute;

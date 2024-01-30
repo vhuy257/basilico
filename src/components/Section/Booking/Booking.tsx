@@ -9,7 +9,7 @@ const Booking = () => {
     return (
         <section className="booking w-svw" style={{backgroundImage: `url("${basePath}/images/basilico/booking.jpg")`}} id="bookTable">
             <div className="container mx-auto max-w-6xl relative z-10">
-                <div className="booking-content flex gap-8 items-center flex-wrap">
+                <div className="booking-content flex gap-8 items-center flex-wrap lg:flex-nowrap">
                     <div className="block-text style-2 w-full lg:w-1/2">
                         <p className="subtitle aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">ONLINE RESERVATION</p>
 

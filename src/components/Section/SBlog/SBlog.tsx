@@ -59,7 +59,7 @@ const SBlog = () => {
             Sed ante nunc, sodales quis laoreet eget
           </p>
         </div>
-        <div className="blogSwiper">
+        <div className="blogSwiper w-full">
           <Swiper
             modules={[Navigation]}
             slidesPerView={3}
@@ -67,6 +67,14 @@ const SBlog = () => {
             navigation={{
               enabled: true,
               nextEl: ".arrow-right",
+            }}
+            breakpoints={{
+              768: {
+                slidesPerView: 1
+              },
+              1200: {
+                slidesPerView: 3
+              }
             }}
             spaceBetween={40}
             loop={true}

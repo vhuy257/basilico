@@ -10,13 +10,13 @@ const Location = () => {
     return (
         <section className="location">
             <div className="container max-w-9xl">
-                <div className="flex text-center gap-8">
-                    <div className="item">
+                <div className="flex text-center gap-8 flex-wrap lg:flex-nowrap">
+                    <div className="item w-full lg:w-2/6">
                         <div className="image left aos-init aos-animate" data-aos-duration="1000" data-aos="fade-right">
                             <Image src={`${basePath}/images/basilico/map1.jpg`} alt="" width={429} height={429}/>
                         </div>
                     </div>
-                    <div className="item">
+                    <div className="item lg:w-2/6">
                         <div className="content">
                             <div className="block-text center">
                                 <p className="subtitle aos-init aos-animate" data-aos-duration="1000" data-aos="fade-up">location</p>
@@ -43,7 +43,7 @@ const Location = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4 col-md-12 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left">
+                    <div className="w-full lg:w-2/6 aos-init aos-animate" data-aos-duration="1000" data-aos="fade-left">
                         <div className="image right">
                             <Image src={`${basePath}/images/basilico/map2.jpg`} alt="" width={429} height={429}/>
                         </div>
