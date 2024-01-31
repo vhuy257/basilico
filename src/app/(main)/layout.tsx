@@ -5,7 +5,7 @@ import ScrollToTop from '@/components/ScrollToTop/ScrollToTop';
 import SmoothScrolling from '@/components/SmoothScrolling/SmoothScrolling';
 
 import 'swiper/css';
-import './globals.css'
+import './globals.scss'
 
 const audrey = localFont({
     src: './fonts/Audrey-Medium.otf',
