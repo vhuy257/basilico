@@ -22,6 +22,9 @@ module.exports = {
         audrey: ['var(--font-audrey)'],
         calibri: ['var(--font-calibri)'],
       },
+      content: {
+        'about-link': `url("/images/x.png")`
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

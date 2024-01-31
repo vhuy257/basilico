@@ -1,13 +1,10 @@
 import { AspectRatio } from '@/components/ui/aspect-ratio'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import { BiLogoFacebook } from "react-icons/bi";
-import { TiSocialTwitter } from "react-icons/ti";
-import { TbMailFilled } from "react-icons/tb";
-import { IoLogoInstagram } from "react-icons/io"
+
 import { FaTelegramPlane } from "react-icons/fa";
 import { basePath } from '@/lib/utils';
+import Social from '../Social/Social';
 
 const Footer = () => {
   return (
@@ -23,28 +20,7 @@ const Footer = () => {
             <div className="py-4">
               Our buzzy food-hall style concept is inspired by international dining styles, especially in Asia. Explore the following fast-action food 
             </div>
-            <ul className="flex gap-5 social-footer">
-              <li>
-                <Link href="#">
-                    <BiLogoFacebook />
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                    <TiSocialTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                    <TbMailFilled />
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                    <IoLogoInstagram />
-                </Link>
-              </li>
-            </ul>
+            <Social />
           </div>
 
           <div className="col-item">
