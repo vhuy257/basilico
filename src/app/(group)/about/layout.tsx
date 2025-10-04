@@ -35,21 +35,45 @@ export default function RootLayout({
         <html lang="en">
         <body className={`${audrey.variable} ${calibri.variable} ${calibri.className}`}>
             <SmoothScrolling>
-                <div className="container mx-auto max-w-7xl flex justify-between items-center top-header text-[--background] py-8">
-                    <div className="contact-left flex items-center">
-                        <div className="icon"><FaUtensils /></div>
-                        <div className="t">
-                            <p>Basilicofood123@gmail.com </p>
-                            <p>+(406) 555-0120</p>
+                <div className="container mx-auto max-w-7xl top-header text-[--background] py-4 lg:py-8">
+                    {/* Mobile Layout */}
+                    <div className="flex flex-col items-center space-y-4 lg:hidden">
+                        
+                        <div className="flex items-center space-y-3 text-center">
+                            <div className="contact-left flex items-center space-x-2">
+                                <div className="icon"><FaUtensils /></div>
+                                <div className="t text-sm">
+                                    <p>Basilicofood123@gmail.com</p>
+                                    <p>+(406) 555-0120</p>
+                                </div>
+                            </div>
+                            <div className="contact-right flex items-center space-x-2">
+                                <div className="icon"><IoLocationSharp /></div>
+                                <div className="t text-sm">
+                                    <p>4517 Washington Ave. Manchester,</p>
+                                    <p>Kentucky 39495, USA</p>
+                                </div>
+                            </div>
                         </div>
+                        <Image src={`${basePath}/images/basilico_logo_dark.png`} alt="Basilico About" width={150} height={38}/>
                     </div>
-                    <Image src={`${basePath}/images/basilico_logo_dark.png`} alt="Basilico About" width={193} height={49}/>
-                    <div className="contact-right flex flex-row-reverse items-center">
-                        <div className="icon"><IoLocationSharp /></div>
-                        <div className="t">
-                            <p>4517 Washington Ave. Manchester,
-                            </p>
-                            <p>Kentucky 39495, USA</p>
+
+                    {/* Desktop Layout */}
+                    <div className="hidden lg:flex justify-between items-center">
+                        <div className="contact-left flex items-center space-x-3">
+                            <div className="icon"><FaUtensils /></div>
+                            <div className="t">
+                                <p>Basilicofood123@gmail.com</p>
+                                <p>+(406) 555-0120</p>
+                            </div>
+                        </div>
+                        <Image src={`${basePath}/images/basilico_logo_dark.png`} alt="Basilico About" width={193} height={49}/>
+                        <div className="contact-right flex flex-row-reverse items-center space-x-3">
+                            <div className="icon"><IoLocationSharp /></div>
+                            <div className="t text-right">
+                                <p>4517 Washington Ave. Manchester,</p>
+                                <p>Kentucky 39495, USA</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -270,10 +270,6 @@ a {
         left: -142px;
         top: -102px;
     }
-
-    .menu-content {
-        padding: 0 290px;
-    }
 }
 
 .s-services {
@@ -336,7 +332,11 @@ a {
 	max-height: 703px;
 	width: 50%;
 	background: #0e1927;
-	padding: 128px 100px 132px 115px;
+	padding: 50px;
+
+    @media screen and (min-width: 768px) {
+        padding: 128px 100px 132px 115px;
+    }
 
     @media screen and (max-width: 1440px) {
         width: 100%;
@@ -439,32 +439,34 @@ a {
 	padding: 135px 0 133px;
 
     .gallery-ig-main {
-        .col-img {
-            .bottom .ig-box  {
-                margin: 0 15px 0;
-                height: 292px;
-                position: relative;
-            }
-
-            .top .ig-box {
-                margin: 0 15px 28px;
-                height: 292px;
-            }
-
-            .ig-box {
-                position: relative;
-                height: 612px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+        @media screen and (min-width: 768px) {
+            .col-img {
+                .bottom .ig-box  {
+                    margin: 0 15px 0;
+                    height: 292px;
+                    position: relative;
+                }
+    
+                .top .ig-box {
+                    margin: 0 15px 28px;
+                    height: 292px;
+                }
+    
+                .ig-box {
+                    position: relative;
+                    height: 612px;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
-        }
-
-        .col-img:nth-child(2) {
-            margin: 0 15px;
+    
+            .col-img:nth-child(2) {
+                margin: 0 15px;
+            }
         }
     }
 }

@@ -132,9 +132,14 @@ const AboutPage = () => {
                 <Swiper
                     navigation={false}
                     spaceBetween={50}
-                    slidesPerView={3}                        
+                    slidesPerView={1}                        
                     speed={1000}              
                     loop={true}
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 3
+                        }
+                    }}
                     grabCursor={true}        
                 >
                     {imageSlides.map((k: any, index: number) => (
@@ -194,7 +199,7 @@ const AboutPage = () => {
             <div className="s-couter">
                 <div className="container">
                     <div className="row">
-                        <div className="couter-content flex justify-between items-center text-center">
+                        <div className="flex justify-between items-center text-center flex-wrap">
                             <div className="couter-box counter">
                                 <div className="number-content">
                                     <CountUp start={0} end={240} delay={0} enableScrollSpy={true}></CountUp>
@@ -240,7 +245,7 @@ const AboutPage = () => {
                                         <div className="flat-tabs aos-init" data-aos-duration="1000" data-aos="fade-up">
                                             <ul className="menu-tab flex justify-center mb-4">
                                                 <li className="active">
-                                                    <h5>your private event</h5>
+                                                    <h5 className="whitespace-nowrap">your private event</h5>
                                                 </li>
                                                 <li>
                                                     <h5>wedding</h5>
@@ -276,7 +281,7 @@ const AboutPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="chef-main flex justify-between">
+                            <div className="chef-main flex justify-between flex-wrap">
                                 <div className="chef-box">
                                     <div className="img aos-init aos-animate" data-aos-duration="1000" data-aos="fade-right">
                                         <Image src={`${basePath}/images/basilico/chef3.jpg`} alt="" height={633} width={500}/>
@@ -324,7 +329,7 @@ const AboutPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="gallery-ig-main flex justify-between">
+                            <div className="gallery-ig-main flex justify-center md:justify-between flex-wrap md:flex-nowrap">
                                 <div className="col-img">
                                     <div className="ig-box">
                                         <Image src={`${basePath}/images/basilico/ig-1.jpg`} alt="" width={360} height={612}/>
