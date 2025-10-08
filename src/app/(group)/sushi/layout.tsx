@@ -1,6 +1,7 @@
 import Header from "@/features/sushi/Header";
 import "./global.css";
 import { Oswald } from "next/font/google";
+import Footer from "@/features/sushi/Footer";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -38,7 +38,7 @@ function AutoHeight({
 }: AutoHeightProps) {
   const { ref, height } = useAutoHeight<HTMLDivElement>(deps);
 
-  const Comp = asChild ? Slot : motion.div;
+  const Comp = (asChild ? Slot : motion.div) as any;
 
   return (
     <Comp

@@ -101,7 +101,7 @@ const Menu = () => {
             height={677}
           />
         </div>
-        <div className="right col-span-2 max-w-[500px] justify-self-start">
+        <div className="right col-span-2 max-w-[500px]">
           <Tabs defaultValue="sushi">
             <TabsList className="flex justify-center gap-10">
               <TabsTrigger

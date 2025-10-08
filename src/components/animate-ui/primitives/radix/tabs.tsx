@@ -166,7 +166,7 @@ function TabsContents(props: TabsContentsProps) {
       layoutDependency={value}
       style={{ overflow: 'hidden', ...style }}
       transition={{ layout: transition }}
-      {...layoutProps}
+      {...(layoutProps as any)}
     />
   );
 }
