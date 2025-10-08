@@ -22,7 +22,7 @@ const menuItems = [
 export default function Header() {
   return (
     <header className="py-4">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1791px] lg:p-0">
         <div className="flex items-center justify-between">
           <div className="logo">
             <Image
