@@ -41,16 +41,16 @@ const Slider = () => {
         {Array.from({ length: 3 }).map((_, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">
-              <div className="flex items-center justify-center w-full h-full relative">
+              <div className="flex items-center justify-center w-full h-full relative overflow-hidden">
                 <Image
                   src={`${basePath}/images/sushi/bg-home-1.jpg`}
                   alt="slider"
                   width={1791}
                   height={771}
-                  className="object-contain"
+                  className="object-contain animate-zoom-out"
                 />
               </div>
-              <div className="absolute top-0 left-0 w-full -mt-20 h-full flex flex-col items-center justify-center text-center">
+              <div className="absolute top-0 left-0 w-full -mt-20 h-full flex flex-col items-center justify-center text-center pointer-events-none">
                 <div className="text-3xl font-bold text-white mb-4 font-thin tracking-wider mb-5">
                   <div className={`flex flex-col items-center space-y-2 ${zenOldMincho.className}`}>
                     <span>和</span>

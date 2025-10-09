@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes zoom-out {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-zoom-out {
+    animation: zoom-out 5s ease-out infinite alternate;
+}
+
 
 .menu-primary-menu > li.current-menu-item > a::before {
     position: absolute;
